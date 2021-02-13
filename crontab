@@ -1,5 +1,4 @@
-# example crontab use
-# blacklist in effect 0:00-5:00
+# blacklisting from 0:00-5:00
 
 0 0 * * * /home/pi/safeEnable
 0 5 * * * /home/pi/safeDisable
