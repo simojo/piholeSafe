@@ -1,11 +1,11 @@
-#! /usr/bin/bash
+#! /usr/bin/env sh
 
 # Pi-hole_SafeSearch.sh --disable
 
 set -e
 
 setDomains() {
-  if [ $1 != "" ]; then
+  if [[ $1 != "" ]]; then
     pihole --wild -d $1 -q
   fi
 }
@@ -15,12 +15,12 @@ i=0
 
 while read thisDomain; do
   domains="$domains $thisDomain"
-  if [ $i == 9 ]; then
+  if [[ $i == 9 ]]; then
     setDomains $domains
     domains=""
     i=0
   else
-    i=$(( $i + 1 ))
+    (( i++ ))
   fi
 done <domains.txt
 
