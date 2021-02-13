@@ -2,3 +2,7 @@
 
 0 0 * * * /home/pi/safeEnable
 0 5 * * * /home/pi/safeDisable
+
+# update gravity daily
+
+0 0 * * * pihole -g
