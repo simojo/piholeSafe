@@ -28,4 +28,4 @@ setDomains $domains
 
 pihole restartdns >/dev/null
 
-echo "\e[32m[success] disabled\e[0m"
+echo -e "\e[32m[success] disabled\e[0m"
