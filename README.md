@@ -13,3 +13,6 @@ ___
   * https://docs.pi-hole.net/database/gravity/
   * located at `/etc/pihole/gravity.db`
   * remove all regex blacklisted items with `delete from domainlist where type=3`
+* logging
+  * `pihole -l off` disbables logging and flushes logs
+  * `pihole -l 0` enables logging with 100% visibility
