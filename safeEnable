@@ -20,7 +20,7 @@ while read thisDomain; do
     domains=""
     i=0
   else
-    (( i++ ))
+    i=$(($i + 1))
   fi
 done <domains.txt
 
