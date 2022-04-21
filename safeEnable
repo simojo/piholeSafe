@@ -13,7 +13,7 @@ setDomains() {
 
 fname=$1
 if [[ $fname == "" ]]; then
-  fname="domains.txt"
+  fname="/home/pi/domains.txt"
 fi
 domains=""
 i=0
