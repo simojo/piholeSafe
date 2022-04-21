@@ -6,10 +6,14 @@ set -e
 
 setDomains() {
   if [[ $1 != "" ]]; then
-    pihole -b $1
+    pihole --wild $1
   fi
 }
 
+fname=$1
+if [[ $fname == "" ]]; then
+  fname="domains.txt"
+fi
 domains=""
 i=0
 
@@ -22,7 +26,7 @@ while read thisDomain; do
   else
     i=$(($i + 1))
   fi
-done <domains.txt
+done <$fname
 
 setDomains $domains
 
