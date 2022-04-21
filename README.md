@@ -1,4 +1,4 @@
-*Simple bash scripts to add/remove domains from pihole wildcard blacklist. (to be used with `crontab` for scheduled toggling)*  
+*Simple bash scripts to add/remove domains from pihole blacklist. (to be used with `crontab` for scheduled toggling)*  
 ___
 
 * Requires `domains.txt` as a `\n` separated list of domains to block.
