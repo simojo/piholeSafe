@@ -6,6 +6,7 @@ set -e
 
 setDomains() {
   if [[ $1 != "" ]]; then
+    pihole -b -d $1
     pihole --wild -d $1
   fi
 }
