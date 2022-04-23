@@ -6,3 +6,7 @@
 # update gravity daily
 
 0 0 * * * pihole -g
+
+# update pihole every sunday at 0:00
+
+0 0 * * 0 pihole -up
